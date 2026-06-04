@@ -5,25 +5,27 @@
   "config": {
     "fields": [
       {
-        "field_id": "demo_text",
-        "priority": 1,
-        "type": "text_input",
-        "title": "Пример текста",
-        "instructions": "Заполните поле",
-        "validation": {}
+        "field_id": "photo",
+        "type": "camera_photo",
+        "title": "Новое поле",
+        "instructions": ""
       }
     ],
     "flow": {
       "steps": [
         {
           "id": "form1",
-          "screen": "form",
+          "screen": "scroll_form",
+          "form_title": "Машинки",
           "field_ids": [
-            "demo_text"
+            "photo"
           ]
+        },
+        {
+          "id": "step_znpg01",
+          "screen": "review"
         }
       ]
-    },
-    "ui": {}
+    }
   }
 }
